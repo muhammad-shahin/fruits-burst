@@ -36,9 +36,9 @@
     <!-- nav bar section -->
     <header class="md:container md:mx-auto mt-3">
       <nav>
-        <div class="navbar bg-white lg:bg-[#f85559] rounded-[600px]">
+        <div class="flex justify-between items-center bg-white lg:bg-[#f85559] rounded-full w-[90%] mx-auto lg:w-full lg:px-10 py-4">
           <!-- nav bar left side -->
-          <div class="navbar-start pl-10 hidden lg:flex">
+          <div class="hidden lg:flex">
             <ul class="menu menu-horizontal px-1 lg:space-x-6 font-['Lato']">
               <!-- menu items -->
               <a class="text-[#FFF] text-[18px]" href="#">Home</a>
@@ -49,7 +49,7 @@
           </div>
 
           <!-- nav bar middle side -->
-          <div class="navbar-center space-x-2 ml-5 lg:ml-0">
+          <div class="flex justify-between items-center space-x-2">
             <img class="w-[55px]" src="images/logo.png" alt="" />
             <h1
               class="normal-case text-xl font-['Lato'] text-black lg:text-white text-[40px] font-extrabold"
@@ -59,35 +59,12 @@
           </div>
 
           <!-- nav bar right side -->
-          <div class="navbar-end ml-auto">
+          <div class="text-right">
             <div class="dropdown">
               <label tabindex="0" class="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
+                <img src="images/hamburger-icon.png" alt="">
               </label>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-[#f85559] rounded-box w-52 font-['Lato']"
-              >
-                <!-- menu items -->
-                <a class="text-[#FFF] text-[18px]" href="#">Home</a>
-                <a class="text-[#FFF] text-[18px]" href="#">About Us</a>
-                <a class="text-[#FFF] text-[18px]" href="#">Shop</a>
-                <a class="text-[#FFF] text-[18px]" href="#">All Fruits</a>
-              </ul>
-            </div>
+              
             <!-- search -->
             <div class="relative hidden lg:flex">
               <input
